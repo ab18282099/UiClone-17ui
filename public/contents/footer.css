@@ -1,0 +1,97 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    flex-shrink: 0;
+    background-color: rgb(255, 255, 255);
+}
+
+.footer-logo {
+    display: inline-block;
+    width: 48px;
+    height: 30px;
+    margin-top: 80px;
+    margin-bottom: 32px;
+}
+
+.footer-app-block {
+    margin-bottom: 60px;
+}
+
+.footer-app-link {
+    position: relative;
+    display: inline-block;
+    width: 157px;
+    height: 47px;
+    cursor: pointer;
+    margin: 0 7px;
+    background-image: url("../images/get-it-on-google-play.svg");
+    background-size: cover;
+}
+
+.apple-store {
+    background-image: url("../images/download-on-app-store.svg");
+}
+
+.footer-copyright {
+    width: 100%;
+    box-shadow: rgb(235, 235, 235) 0 -1px 0 0;
+    display: flex;
+}
+
+.footer-copyright-body {
+    position: relative;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1560px;
+    height: 60px;
+    font-size: 12px;
+    color: rgb(111, 103, 119);
+    text-align: center;
+    white-space: nowrap;
+    letter-spacing: 0;
+    margin: auto;
+    padding: 0 30px;
+}
+
+.copyright-link {
+    color: rgb(111, 103, 119);
+    display: block;
+    font-size: 12px;
+    margin: 0 0 0 40px;
+}
+
+.lang-selector {
+    display: flex;
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+    flex: 1 1 0;
+    margin-top: 10px;
+    margin-left: 800px;
+    margin-right: 10px;
+}
+
+.btn-lang-selector {
+    width: 135px;
+    text-align: left;
+}
+
+.dropup .dropdown-toggle::before {
+    border-bottom: 0.3em solid;
+    margin-left: 55px;
+}
+.dropup .dropdown-toggle::after {
+    margin-left: 55px;
+}
+
+.lang-list li a {
+    font-size: 14px;
+    color: rgb(111, 103, 119);
+}

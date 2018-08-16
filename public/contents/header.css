@@ -1,0 +1,48 @@
+.header-main {
+    padding-bottom: 30px;
+    background-color: rgb(255, 255, 255);
+}
+
+.header-block {
+    display: flex;
+    flex-direction: row;
+    width: 1100px;
+    -webkit-box-pack: center;
+    justify-content: center;
+    margin: 40px auto;
+}
+
+.header-stream {
+    position: relative;
+    width: 960px;
+    height: 540px;
+    text-shadow: rgba(0, 0, 0, 0.1) 0 1px 0;
+    background-color: rgb(111, 103, 119);
+    z-index: 0;
+    border-radius: 4px;
+    overflow: hidden;
+    transition: height 0.2s;
+}
+
+.header-list {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.header-list-item-first {
+    width: 100px;
+    display: inline-block;
+    margin: 0 0 0 10px;
+}
+
+.header-list-item {
+    width: 100px;
+    display: inline-block;
+    margin: 10px 0 0 10px;
+}
+
+.header-list-img {
+    width: 100px;
+    height: 100px;
+}
