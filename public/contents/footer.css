@@ -9,7 +9,7 @@
     background-color: rgb(255, 255, 255);
 }
 
-.footer-logo {
+.footer .footer-logo {
     display: inline-block;
     width: 48px;
     height: 30px;
@@ -17,11 +17,11 @@
     margin-bottom: 32px;
 }
 
-.footer-app-block {
+.footer .footer-app-block {
     margin-bottom: 60px;
 }
 
-.footer-app-link {
+.footer .footer-app-block .footer-app-link {
     position: relative;
     display: inline-block;
     width: 157px;
@@ -32,17 +32,17 @@
     background-size: cover;
 }
 
-.apple-store {
+.footer .footer-app-block .apple-store {
     background-image: url("../images/download-on-app-store.svg");
 }
 
-.footer-copyright {
+.footer .footer-copyright {
     width: 100%;
     box-shadow: rgb(235, 235, 235) 0 -1px 0 0;
     display: flex;
 }
 
-.footer-copyright-body {
+.footer .footer-copyright .footer-copyright-body {
     position: relative;
     display: flex;
     -webkit-box-pack: center;
@@ -61,14 +61,14 @@
     padding: 0 30px;
 }
 
-.copyright-link {
+.footer .footer-copyright .footer-copyright-body .copyright-link {
     color: rgb(111, 103, 119);
     display: block;
     font-size: 12px;
     margin: 0 0 0 40px;
 }
 
-.lang-selector {
+.footer .footer-copyright .lang-selector {
     display: flex;
     -webkit-box-pack: end;
     justify-content: flex-end;
@@ -78,7 +78,7 @@
     margin-right: 10px;
 }
 
-.btn-lang-selector {
+.footer .footer-copyright .lang-selector .btn-lang-selector {
     width: 135px;
     text-align: left;
 }

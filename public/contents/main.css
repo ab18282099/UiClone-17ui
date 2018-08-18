@@ -2,7 +2,7 @@
     padding-top: 60px;
 }
 
-.main-tab {
+.main-layout .main-tab {
     display: flex;
     -webkit-box-pack: center;
     justify-content: center;
@@ -16,7 +16,7 @@
     list-style-type: none;
 }
 
-.main-tab-item {
+.main-layout .main-tab .main-tab-item {
     position: relative;
     display: inline-block;
     font-weight: 500;
@@ -28,22 +28,22 @@
     transition: color 0.15s ease-out;
 }
 
-.main-tab-active {
+.main-layout .main-tab .main-tab-active {
     border-bottom: solid;
 }
 
-.main-tab-item-active {
+.main-layout .main-tab .main-tab-item-active {
     color: rgb(40, 35, 45);
 }
 
-.main-stream-wrapper {
+.main-layout .main-stream-wrapper {
     background-color: #fafafa;
     text-align: center;
     padding-top: 40px;
     padding-bottom: 40px;
 }
 
-.main-stream {
+.main-layout .main-stream-wrapper .main-stream {
     display: flex;
     width: 1090px;
     -webkit-box-pack: start;
@@ -55,13 +55,13 @@
     list-style-type: none;
 }
 
-.main-stream-block {
+.main-layout .main-stream-wrapper .main-stream .main-stream-block {
     position: relative;
     flex-basis: 25%;
     width: 25%;
 }
 
-.main-stream-link {
+.main-layout .main-stream-wrapper .main-stream .main-stream-block .main-stream-link {
     display: block;
     position: relative;
     cursor: pointer;
@@ -77,7 +77,7 @@
     height: 250px;
 }
 
-.main-load-more {
+.main-layout .main-load-more {
     background-color: #fafafa;
     display: flex;
     align-items: center;
@@ -85,7 +85,7 @@
     padding-bottom: 20px;
 }
 
-.btn-load-more {
+.main-layout .main-load-more .btn-load-more {
     background-color: rgb(255, 255, 255);
     color: rgb(40, 35, 45);
     box-sizing: border-box;

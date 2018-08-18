@@ -1,0 +1,298 @@
+.user-main {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: rgb(245, 245, 245);
+}
+
+.user-main .left-block {
+    width: 360px;
+}
+
+.user-main .left-block .user-info {
+    height: 248px;
+    padding: 20px 16px;
+    border: 1px solid rgb(230, 230, 230);
+    border-radius: 4px;
+    background-color: white;
+}
+
+.user-main .left-block .user-info .user-info-content {
+    display: flex;
+}
+
+.user-main .left-block .user-info .user-info-content .right {
+    margin: 0 10px;
+}
+
+.user-main .left-block .user-info .user-image {
+    width: 48px;
+    height: 48px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    background-image: url(https://assets-17app.akamaized.net/THUMBNAIL_6CFB4965-8CF7-4992-9F0C-0701C4A37E7C.jpg), url(https://webcdn.17app.co/17live/ig-default.svg);
+}
+
+.user-main .left-block .user-info a {
+    color: #343038;
+}
+
+.user-main .left-block .user-info a:hover {
+    text-decoration: none;
+}
+
+.user-main .left-block .user-info .user-rate {
+    background-color: #9e7bff;
+    padding: 1px 4px 0;
+    border-radius: 4px;
+}
+
+.user-main .left-block .user-info .user-rate > svg {
+    width: 14px;
+    height: 14px;
+    vertical-align: inherit;
+}
+
+.user-main .left-block .user-info .user-rate:after {
+    content: "63";
+    font-size: 12px;
+    font-weight: 300;
+    color: rgb(255, 255, 255);
+    letter-spacing: normal;
+    margin: 2px;
+    vertical-align: text-bottom;
+}
+
+.user-main .left-block .user-info .bottom {
+    font-size: 12px;
+    margin-top: 5px;
+    color: rgb(111, 103, 119);;
+}
+
+.user-main .left-block .user-info .user-describe {
+    font-size: 14px;
+    height: 118px;
+    margin: 13px 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.user-main .left-block .user-info .btn-trace button {
+    width: 100%;
+    font-size: 12px;
+    padding: 5px;
+}
+
+.user-main .left-block .hot {
+    margin-top: 20px;
+    padding: 20px 16px;
+    border: 1px solid rgb(230, 230, 230);
+    border-radius: 4px;
+    height: 262px;
+    background-color: white;
+}
+
+.user-main .left-block .hot h3 {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.user-main .left-block .hot .user-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    height: calc(100% - 35px);
+}
+
+.user-main .left-block .hot .user-list-item {
+    width: 33%;
+}
+
+.user-main .left-block .hot .user-list-item .user {
+    padding: calc(50% - 10px) 0;
+    margin: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 6px 10px 1px;
+    border: 1px solid rgb(242, 242, 242);
+    border-radius: 10px;
+}
+
+.user-main .middle-block {
+    margin-left: 20px;
+    border-radius: 4px;
+    background: rgb(74, 72, 77) no-repeat center bottom;
+    overflow: hidden;
+}
+
+.user-main .live-video-player {
+    height: 100%;
+    width: 293px;
+    background-image: url(https://17.live/assets/e4923267236833b4f875e42de9e50dbc.png);
+    background-size: cover;
+    opacity: 0.5;
+    background-position: center center
+}
+
+.user-main .live-video-player .live-video-loading {
+    position: relative;
+    width: 100px;
+    height: 96px;
+    margin: 0 auto;
+    top: 40%;
+    overflow: hidden;
+}
+
+.user-main .live-video-player .live-video-loading .loading-wrapper {
+    background-image: url(https://17.live/assets/e1f6196d7978247d1ee183eafb309ebe.png);
+    background-repeat: no-repeat;
+    animation: loadingFrame 0.45s steps(9, end) infinite;
+    width: 100%;
+    height: 864px;
+}
+
+@keyframes loadingFrame {
+    from 	{transform: translateY(-0%);}
+    to	 	{transform: translateY(-100%);}
+}
+
+.user-main .right-block {
+    margin-left: 20px;
+    width: 360px;
+    height: calc(100% - 40px);
+    border: 1px solid rgb(230, 230, 230);
+    border-radius: 4px;
+}
+
+.user-main .right-block .nav {
+    justify-content: center;
+    border: 0;
+    background-color: white;
+}
+
+.user-main .right-block .nav-item {
+    width: 33%;
+    position: relative;
+}
+
+.user-main .right-block .nav-item a {
+    border: 0;
+    text-align: center;
+    color: rgb(169, 164, 176);
+    font-size: 14px;
+    position: relative;
+    padding: 15px;
+}
+
+.user-main .right-block .nav-item a:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    width: 1px;
+    height: 1.3em;
+    background-color: rgb(210, 210, 215);
+}
+
+.user-main .right-block .nav-item:last-child a:after {
+    display: none;
+}
+
+.user-main .right-block .nav-item.active:after {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    display: block;
+    background-color: rgb(250, 250, 250);
+    bottom: 0;
+    box-shadow: rgb(230, 230, 230) 1px 1px 1px 0 inset;
+    left: 50%;
+    transform: translate(-50%, 50%) rotate(45deg);
+    z-index: 1;
+}
+
+.user-main .right-block .nav-item.active a {
+    color: rgb(40, 35, 45);
+}
+
+.user-main .right-block .message {
+    height: calc(100% - 50px);
+    background-color: rgb(250, 250, 250);
+    border-top: 1px solid rgb(230, 230, 230);
+    position: relative;
+}
+
+.user-main .right-block .message .not-in-live {
+    width: 145px;
+    height: 101px;
+    margin: 0 auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(calc(-50% - 78px));
+}
+
+.user-main .right-block .message .not-in-live .txt {
+    color: rgb(169, 164, 176);
+    font-size: 14px;
+    margin-top: 14px;
+}
+
+.user-main .right-block .message .send-message {
+    padding: 14px 14px 18px 14px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.user-main .right-block .message .send-message .text-area {
+    color: rgb(111, 103, 119);
+    width: 100%;
+    height: 46px;
+    resize: none;
+    display: block;
+    background-color: rgb(247, 247, 247);
+    padding: 10px 15px;
+    border: 1px solid rgb(235, 235, 235);
+    border-radius: 4px;
+}
+
+@media (max-width: 1000px) {
+    .user-main {
+        flex-direction: row;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .user-main .left-block {
+        order: 3;
+        width: 100%;
+        margin: 30px 0;
+    }
+
+    .user-main .middle-block {
+        width: 50%;
+        margin: 0;
+        height: calc(100vh - 110px);
+    }
+
+    .user-main .right-block {
+        flex-grow: 1;
+    }
+}
+
+@media (max-width: 770px) {
+    .user-main .right-block {
+        margin: 30px 0 0;
+        flex-grow: 0;
+        width: 100%;
+    }
+
+    .user-main .middle-block {
+        width: auto;
+        left: 50%;
+        position: relative;
+        transform: translateX(-50%);
+    }
+}

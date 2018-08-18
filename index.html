@@ -2,98 +2,159 @@
 <html lang="zh-Hant-TW">
 <head>
     <title>17 live</title>
-    <link href="public/contents/tether.css" rel="stylesheet" type="text/css" />
-    <link href="public/contents/bootstrap.css" rel="stylesheet" type="text/css" />
-    <link href="public/contents/site.css" rel="stylesheet" type="text/css" />
-    <link href="public/contents/navbar.css" rel="stylesheet" type="text/css" />
-    <link href="public/contents/header.css" rel="stylesheet" type="text/css" />
-    <link href="public/contents/main.css" rel="stylesheet" type="text/css" />
-    <link href="public/contents/footer.css" rel="stylesheet" type="text/css" />
+    <link href="public/contents/tether.css" rel="stylesheet" type="text/css"/>
+    <link href="public/contents/bootstrap.css" rel="stylesheet" type="text/css"/>
+    <link href="public/contents/site.css" rel="stylesheet" type="text/css"/>
+    <link href="public/contents/navbar.css" rel="stylesheet" type="text/css"/>
+    <link href="public/contents/header.css" rel="stylesheet" type="text/css"/>
+    <link href="public/contents/main.css" rel="stylesheet" type="text/css"/>
+    <link href="public/contents/footer.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
-    <div id="app">
-        <!--搜尋列-->
-        <nav class="nav-bar">
-            <div class="nav-main">
-                <a href="#">
-                    <img src="https://17.live/assets/0c905087846eea5c9e7cd23d03626820.png" width="44px">
-                </a>
-                <div class="nav-left">
-                    <a class="nav-left-button"><span>首頁</span></a>
-                    <a class="nav-left-button"><span>17TV</span></a>
-                    <a class="nav-left-button"><span>儲值</span></a>
-                    <a class="nav-left-button"><span>排行榜</span></a>
-                </div>
-                <div class="nav-search">
-                    <div class="nav-search-bar">
-                        <span><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"><g fill="none" fill-rule="evenodd" stroke="#A9A4B0" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" transform="translate(8 8)"><circle cx="5.833" cy="5.833" r="5.833"></circle><path d="M14 14L9.956 9.956"></path></g></svg></span>
-                        <input class="nav-search-bar-input" placeholder="搜尋" value="">
+<div id="app">
+    <!--搜尋列-->
+    <nav class="nav-bar">
+        <div class="nav-main">
+            <a href="#">
+                <img src="https://17.live/assets/0c905087846eea5c9e7cd23d03626820.png" width="44px">
+            </a>
+            <div class="nav-left">
+                <a class="nav-left-button" href="index.html"><span>首頁</span></a>
+                <div class="dropdown">
+                    <a class="nav-left-button nav-dropdown" id="navbarDropdown"><span>17TV</span></a>
+                    <div class="dropdown-menu nav-dropdown" aria-labelledby="navbarDropdown">
+                        <div class="wrapper">
+                            <a class="dropdown-item" href="#">17好聰明x17金麥克</a>
+                            <a class="dropdown-item" href="#">17Q</a>
+                        </div>
                     </div>
                 </div>
-                <div class="nav-space"></div>
-                <div class="nav-right-button"><span>註冊</span></div>
-                <span class="nav-separation">|</span>
-                <div class="nav-right-button"><span>登入</span></div>
+                <a class="nav-left-button"><span>儲值</span></a>
+                <a class="nav-left-button"><span>排行榜</span></a>
             </div>
-        </nav>
-        <!--Main layout-->
-        <div class="main-layout">
-            <!--首頁熱門直播-->
-            <header class="header-main">
-                <div class="header-block">
-                    <div class="header-stream">
-                        <img src="public/images/demo-live-stream.jpg">
-                    </div>
-                    <div class="header-list">
-                        <div class="header-list-item-first"><a href="#"><img class="header-list-img" src="public/images/header-list-item.jpg"></a></div>
-                        <div class="header-list-item"><a href="#"><img class="header-list-img" src="public/images/header-list-item.jpg"></a></div>
-                        <div class="header-list-item"><a href="#"><img class="header-list-img" src="public/images/header-list-item.jpg"></a></div>
-                        <div class="header-list-item"><a href="#"><img class="header-list-img" src="public/images/header-list-item.jpg"></a></div>
-                        <div class="header-list-item"><a href="#"><img class="header-list-img" src="public/images/header-list-item.jpg"></a></div>
+            <div class="nav-search">
+                <div class="nav-search-bar">
+                    <span><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"><g
+                            fill="none" fill-rule="evenodd" stroke="#A9A4B0" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-width="1.5" transform="translate(8 8)"><circle cx="5.833"
+                                                                                                          cy="5.833"
+                                                                                                          r="5.833"></circle><path
+                            d="M14 14L9.956 9.956"></path></g></svg></span>
+                    <input class="nav-search-bar-input" placeholder="搜尋" value="">
+                </div>
+            </div>
+            <div class="nav-space"></div>
+            <div class="nav-right-button"><span>註冊</span></div>
+            <span class="nav-separation">|</span>
+            <div class="nav-right-button"><span>登入</span></div>
+        </div>
+    </nav>
+    <!--Main layout-->
+    <div class="main-layout">
+        <!--首頁熱門直播-->
+        <header class="header-main">
+            <div class="header-block">
+                <div class="header-stream">
+                    <div class="header-stream-loading">
+                        <div class="loading-wrapper"></div>
                     </div>
                 </div>
-            </header>
-            <!--tab & 20宮格-->
-            <main>
-                <ul class="main-tab">
-                    <li><a href="#" class="main-tab-item"><span>追蹤</span></a></li>
-                    <li class="main-tab-active">
-                        <a href="#" class="main-tab-item main-tab-item-active">
-                            <span>熱門</span>
-                        </a>
+                <div class="header-list">
+                    <div class="header-list-item header-list-item-first">
+                        <a href="user.html"><img class="header-list-img" src="public/images/header-list-item.jpg"></a>
+                    </div>
+                    <div class="header-list-item"><a href="user.html"><img class="header-list-img"
+                                                                   src="public/images/header-list-item.jpg"></a></div>
+                    <div class="header-list-item"><a href="user.html"><img class="header-list-img"
+                                                                   src="public/images/header-list-item.jpg"></a></div>
+                    <div class="header-list-item"><a href="user.html"><img class="header-list-img"
+                                                                   src="public/images/header-list-item.jpg"></a></div>
+                    <div class="header-list-item"><a href="user.html"><img class="header-list-img"
+                                                                   src="public/images/header-list-item.jpg"></a></div>
+                </div>
+            </div>
+        </header>
+        <!--tab & 20宮格-->
+        <main>
+            <ul class="main-tab">
+                <li><a href="#" class="main-tab-item"><span>追蹤</span></a></li>
+                <li class="main-tab-active">
+                    <a href="#" class="main-tab-item main-tab-item-active">
+                        <span>熱門</span>
+                    </a>
+                </li>
+                <li><a href="#" class="main-tab-item"><span>最新</span></a></li>
+            </ul>
+            <div class="main-stream-wrapper">
+                <ul class="main-stream">
+                    <li>
+                        <div class="main-stream-block"><a class="main-stream-link" href="user.html"></a></div>
                     </li>
-                    <li><a href="#" class="main-tab-item"><span>最新</span></a></li>
+                    <li>
+                        <div class="main-stream-block"><a class="main-stream-link" href="user.html"></a></div>
+                    </li>
+                    <li>
+                        <div class="main-stream-block"><a class="main-stream-link" href="user.html"></a></div>
+                    </li>
+                    <li>
+                        <div class="main-stream-block"><a class="main-stream-link" href="user.html"></a></div>
+                    </li>
+                    <li>
+                        <div class="main-stream-block"><a class="main-stream-link" href="user.html"></a></div>
+                    </li>
+                    <li>
+                        <div class="main-stream-block"><a class="main-stream-link" href="user.html"></a></div>
+                    </li>
+                    <li>
+                        <div class="main-stream-block"><a class="main-stream-link" href="user.html"></a></div>
+                    </li>
+                    <li>
+                        <div class="main-stream-block"><a class="main-stream-link" href="user.html"></a></div>
+                    </li>
+                    <li>
+                        <div class="main-stream-block"><a class="main-stream-link" href="user.html"></a></div>
+                    </li>
+                    <li>
+                        <div class="main-stream-block"><a class="main-stream-link" href="user.html"></a></div>
+                    </li>
+                    <li>
+                        <div class="main-stream-block"><a class="main-stream-link" href="user.html"></a></div>
+                    </li>
+                    <li>
+                        <div class="main-stream-block"><a class="main-stream-link" href="user.html"></a></div>
+                    </li>
+                    <li>
+                        <div class="main-stream-block"><a class="main-stream-link" href="user.html"></a></div>
+                    </li>
+                    <li>
+                        <div class="main-stream-block"><a class="main-stream-link" href="user.html"></a></div>
+                    </li>
+                    <li>
+                        <div class="main-stream-block"><a class="main-stream-link" href="user.html"></a></div>
+                    </li>
+                    <li>
+                        <div class="main-stream-block"><a class="main-stream-link" href="user.html"></a></div>
+                    </li>
+                    <li>
+                        <div class="main-stream-block"><a class="main-stream-link" href="user.html"></a></div>
+                    </li>
+                    <li>
+                        <div class="main-stream-block"><a class="main-stream-link" href="user.html"></a></div>
+                    </li>
+                    <li>
+                        <div class="main-stream-block"><a class="main-stream-link" href="user.html"></a></div>
+                    </li>
+                    <li>
+                        <div class="main-stream-block"><a class="main-stream-link" href="user.html"></a></div>
+                    </li>
                 </ul>
-                <div class="main-stream-wrapper">
-                    <ul class="main-stream">
-                        <li><div class="main-stream-block"><a class="main-stream-link" href="#"></a></div></li>
-                        <li><div class="main-stream-block"><a class="main-stream-link" href="#"></a></div></li>
-                        <li><div class="main-stream-block"><a class="main-stream-link" href="#"></a></div></li>
-                        <li><div class="main-stream-block"><a class="main-stream-link" href="#"></a></div></li>
-                        <li><div class="main-stream-block"><a class="main-stream-link" href="#"></a></div></li>
-                        <li><div class="main-stream-block"><a class="main-stream-link" href="#"></a></div></li>
-                        <li><div class="main-stream-block"><a class="main-stream-link" href="#"></a></div></li>
-                        <li><div class="main-stream-block"><a class="main-stream-link" href="#"></a></div></li>
-                        <li><div class="main-stream-block"><a class="main-stream-link" href="#"></a></div></li>
-                        <li><div class="main-stream-block"><a class="main-stream-link" href="#"></a></div></li>
-                        <li><div class="main-stream-block"><a class="main-stream-link" href="#"></a></div></li>
-                        <li><div class="main-stream-block"><a class="main-stream-link" href="#"></a></div></li>
-                        <li><div class="main-stream-block"><a class="main-stream-link" href="#"></a></div></li>
-                        <li><div class="main-stream-block"><a class="main-stream-link" href="#"></a></div></li>
-                        <li><div class="main-stream-block"><a class="main-stream-link" href="#"></a></div></li>
-                        <li><div class="main-stream-block"><a class="main-stream-link" href="#"></a></div></li>
-                        <li><div class="main-stream-block"><a class="main-stream-link" href="#"></a></div></li>
-                        <li><div class="main-stream-block"><a class="main-stream-link" href="#"></a></div></li>
-                        <li><div class="main-stream-block"><a class="main-stream-link" href="#"></a></div></li>
-                        <li><div class="main-stream-block"><a class="main-stream-link" href="#"></a></div></li>
-                    </ul>
-                </div>
-                <div class="main-load-more">
-                    <button class="btn-load-more"><span>載入更多</span></button>
-                </div>
-            </main>
-            <!--地-->
-            <footer class="footer">
+            </div>
+            <div class="main-load-more">
+                <button class="btn-load-more"><span>載入更多</span></button>
+            </div>
+        </main>
+        <!--地-->
+        <footer class="footer">
                 <span class="footer-logo">
                     <svg xmlns="http://www.w3.org/2000/svg" width="48" height="30" viewBox="0 0 48 30">
                         <g fill="#28232D" fill-rule="evenodd">
@@ -102,34 +163,36 @@
                         </g>
                     </svg>
                 </span>
-                <div class="footer-app-block">
-                    <a class="footer-app-link apple-store" href="#"></a>
-                    <a class="footer-app-link" href="#"></a>
+            <div class="footer-app-block">
+                <a class="footer-app-link apple-store" href="#"></a>
+                <a class="footer-app-link" href="#"></a>
+            </div>
+            <div class="footer-copyright">
+                <div class="footer-copyright-body">
+                    <span>© 17 Media</span>
+                    <a class="copyright-link" href="#"><span>服務條款</span></a>
+                    <a class="copyright-link" href="#"><span>用戶協議</span></a>
                 </div>
-                <div class="footer-copyright">
-                    <div class="footer-copyright-body">
-                        <span>© 17 Media</span>
-                        <a class="copyright-link" href="#"><span>服務條款</span></a>
-                        <a class="copyright-link" href="#"><span>用戶協議</span></a>
-                    </div>
-                    <div class="lang-selector">
-                        <div class="dropup">
-                            <button class="btn btn-outline-secondary btn-lang-selector dropdown-toggle" type="button" data-toggle="dropdown">
-                                台灣
-                                <span class="caret"></span></button>
-                            <ul class="dropdown-menu dropdown-menu-right lang-list">
-                                <li><a href="#">香港</a></li>
-                                <li><a href="#">馬來西亞</a></li>
-                                <li><a href="#">全球</a></li>
-                            </ul>
-                        </div>
+                <div class="lang-selector">
+                    <div class="dropup">
+                        <button class="btn btn-outline-secondary btn-lang-selector dropdown-toggle" type="button"
+                                data-toggle="dropdown">
+                            台灣
+                            <span class="caret"></span></button>
+                        <ul class="dropdown-menu dropdown-menu-right lang-list">
+                            <li><a href="#">香港</a></li>
+                            <li><a href="#">馬來西亞</a></li>
+                            <li><a href="#">全球</a></li>
+                        </ul>
                     </div>
                 </div>
-            </footer>
-        </div>
+            </div>
+        </footer>
     </div>
-    <script src="public/scripts/jquery-3.3.1.js" type="text/javascript"></script>
-    <script src="public/scripts/tether.js" type="text/javascript"></script>
-    <script src="public/scripts/bootstrap.js" type="text/javascript"></script>
+</div>
+<script src="public/scripts/jquery-3.3.1.js" type="text/javascript"></script>
+<script src="public/scripts/tether.js" type="text/javascript"></script>
+<script src="public/scripts/bootstrap.js" type="text/javascript"></script>
+<script src="public/scripts/navbar.js" type="text/javascript"></script>
 </body>
 </html>
