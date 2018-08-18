@@ -58,7 +58,6 @@
 .main-layout .main-stream-wrapper .main-stream .main-stream-block {
     position: relative;
     flex-basis: 25%;
-    width: 25%;
 }
 
 .main-layout .main-stream-wrapper .main-stream .main-stream-block .main-stream-link {
@@ -71,10 +70,71 @@
     border: 1px solid rgb(242, 242, 242);
     border-image: initial;
     transition: transform 0.2s linear;
-    background-image: url("../images/main-stream-list.jpg");
+    background-image: url(https://assets-17app.akamaized.net/THUMBNAIL_ca76e82c-f605-4015-b507-af8b69c90044.jpg);
     background-size: cover;
+    box-shadow: inset 1px -20px 20px 10px #0000004f;
     width: 250px;
     height: 250px;
+}
+
+.main-stream-block .main-stream-link .live-badge {
+    position: absolute;
+    z-index: 1;
+    top: 10px;
+    left: 10px;
+    font-size: 12px;
+    height: 20px;
+    background-color: rgb(255, 255, 255);
+    display: inline-flex;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    align-items: center;
+    flex-shrink: 0;
+    font-weight: 500;
+    color: rgb(245, 72, 125);
+    box-shadow: rgba(0, 0, 0, 0.1) 0 0 1px 0;
+    box-sizing: border-box;
+    letter-spacing: normal;
+    line-height: 1;
+    transform: scale(1);
+    transform-origin: left top 0;
+    border-radius: 20px;
+    padding: 0 8px 0 7px;
+}
+
+.main-stream-block .main-stream-link .live-badge .badge-star {
+    height: 14px;
+    width: 14px;
+}
+
+.main-stream-block .main-stream-link .bottom-label {
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    width: 100%;
+    -webkit-box-align: center;
+    align-items: center;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    max-width: calc(100% - 20px);
+    text-shadow: rgba(0, 0, 0, 0.5) 0 0 10px;
+    white-space: nowrap;
+    z-index: 2;
+}
+
+.main-stream-block .main-stream-link .bottom-label .label-name {
+    font-size: 14px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    color: white;
+}
+
+.main-stream-block .main-stream-link .bottom-label .label-region {
+    font-size: 12px;
+    margin-left: 10px;
+    color: white;
 }
 
 .main-layout .main-load-more {
